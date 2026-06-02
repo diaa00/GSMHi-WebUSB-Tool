@@ -1,0 +1,102 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif; 
+    background: #cbd0d4;
+    margin: 0;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.app-window { 
+    background: #f0f0f0; 
+    border: 1px solid #7f8fa6;
+    width: 100%; 
+    max-width: 900px; 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bar {
+    background: #1e3799;
+    color: white;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.window-controls span { margin-left: 15px; cursor: pointer; }
+.window-controls span:hover { color: #ccc; }
+
+.menu-bar {
+    background: #ffffff;
+    border-bottom: 1px solid #dcdde1;
+    padding: 4px 10px;
+    font-size: 12px;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-item { padding: 4px 8px; cursor: pointer; }
+.menu-item:hover { background: #e2e8f0; border-radius: 3px; }
+
+.toolbar {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dcdde1;
+    display: flex;
+    gap: 8px;
+}
+
+button { 
+    background: #ffffff; 
+    color: #333; 
+    border: 1px solid #b2bec3; 
+    padding: 6px 15px; 
+    border-radius: 3px; 
+    font-size: 13px; 
+    cursor: pointer; 
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button:hover:not(:disabled) { background: #e9ecef; border-color: #1e3799; }
+button:disabled { color: #a4b0be; cursor: not-allowed; }
+
+.console-window { 
+    background: #e5e5e5; 
+    padding: 15px; 
+    height: 450px; 
+    overflow-y: auto; 
+    font-family: 'Consolas', 'Courier New', monospace; 
+    font-size: 14px; 
+    font-weight: bold;
+    line-height: 1.4;
+    border-bottom: 1px solid #dcdde1;
+}
+
+.status-bar {
+    background: #f1f2f6;
+    padding: 6px 15px;
+    font-size: 12px;
+    color: #57606f;
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-green { color: #008000; }
+.color-blue { color: #0000ff; }
+.color-red { color: #ff0000; }
+.color-black { color: #000000; }
+
+.info-row { display: flex; }
+.info-label { width: 140px; color: #000000; }
+.info-colon { margin-right: 5px; color: #000000; }
+.info-value { color: #0000ff; }

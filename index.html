@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSMHi WebUSB Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-window">
+        <div class="title-bar">
+            <span>📱 GSMHi WebUSB Tool v1.0.2</span>
+            <div class="window-controls">
+                <span>_</span>
+                <span>□</span>
+                <span>×</span>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <span class="menu-item">File</span>
+            <span class="menu-item">Operations</span>
+            <span class="menu-item">Settings</span>
+            <span class="menu-item">About GSMHi</span>
+        </div>
+
+        <div class="toolbar">
+            <button id="btnConnect">⚙️ Read Info (ADB)</button>
+            <button disabled>🔄 Reboot</button>
+            <button disabled>🔓 Reset FRP</button>
+        </div>
+        
+        <div id="terminal" class="console-window">
+            <div class="color-blue">Welcome to GSMHi WebUSB Engine.</div>
+            <div class="color-blue">Please only use this tool for educational purposes.</div>
+            <div class="color-blue">Waiting for device connection...</div><br>
+        </div>
+
+        <div class="status-bar">
+            <span id="statusText">Status: Ready</span>
+            <strong>© 2024 WWW.GSMHi.COM - All Rights Reserved</strong>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
